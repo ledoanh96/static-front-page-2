@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+/* nav bar style */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  background-color: #eeeced;
+  padding: 0 5%;
+}
+#right-nav {
+  display: flex;
+  justify-content: space-between;
+}
+#right-nav > a {
+  color: #000000;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+#right-nav > a:hover {
+  color: #cb3362;
+}
+/* main style */
+main {
+  position: relative;
+  height: auto;
+}
+#main-big {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+}
+#main-small {
+  position: absolute;
+  z-index: 9;
+  bottom: 10%;
+  right: 20%;
+  width: 200px;
+  height: 200px;
+}
+#main-small > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#main-small > div {
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  font-size: 120%;
+  color: white;
+  text-transform: uppercase;
+}
+/* product section style */
+#products-section {
+  width: 100%;
+  height: 30vh;
+  background-color: #e9e7e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+#products-text {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 40px 0;
+}
+#products-text > h3 {
+  color: #7a6665;
+}
+#products-text > h2 {
+  color: #cb3362;
+}
+/* link section style */
+#link-section {
+  background-color: #c8c10e;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.pic-with-cap {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+}
+.pic-with-cap > img {
+  display: block;
+  margin: 0 auto;
+}
+/* footer style */
+footer {
+    background-color: #cb3362;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#upper-footer >* {
+    padding: 0 20px;
+}
+#lower-footer {
+    padding-top:20px;
+    color: white;
+}
